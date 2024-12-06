@@ -1,0 +1,207 @@
+body {
+    background-image: url(https://img.freepik.com/premium-vector/abstract-background-geometric-blue-green-wave-effect-with-memphis-background_586360-2484.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.front-img {
+    width: 40vw;
+    border-radius: 20px;
+}
+
+a:hover {
+    color: lightgreen;
+}
+
+#second-section {
+    padding-top: 200px;
+}
+
+.testamonial-area-img {
+    max-width: 100%;
+    height: 55vh;
+    width: 40vw;
+    border-radius: 15px;
+}
+
+#text-adjust {
+    width: 30vw;
+}
+
+.size-adjust {
+    padding-top: 110px;
+}
+
+@media screen and (max-width: 455px) {
+    .testamonial-area-img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #text-adjust {
+        width: 100%;
+        text-align: justify;
+        padding: 5px;
+    }
+
+    .icon {
+        visibility: hidden;
+    }
+
+    .size-adjust {
+        padding-top: 10px;
+    }
+
+    .try-now-button {
+        padding-top: 10px;
+        width: 60vw;
+        max-width: 100%;
+        margin-left: 60px;
+    }
+
+}
+
+
+/* front-text animation */
+.fade-text {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: fade 3s infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.3;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+/* background animation*/
+.showcase {
+    position: relative;
+    bottom: 50px;
+}
+
+/* button animation*/
+.bounce-text {
+
+    animation: bounce 2s infinite;
+}
+
+/* Bounce Animation */
+.rigging-button {
+
+
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Button Hover Effect */
+.rigging-button:hover {
+    animation: rigging 0.5s ease-in-out;
+}
+
+/* Rigging Animation */
+@keyframes rigging {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(-3px, -2px) rotate(-2deg);
+    }
+
+    50% {
+        transform: translate(3px, 2px) rotate(2deg);
+    }
+
+    75% {
+        transform: translate(-2px, -1px) rotate(-1deg);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+.text-shadow {
+
+    animation: textShadowPulse 3s infinite ease-in-out;
+}
+
+@keyframes textShadowPulse {
+    0% {
+        text-shadow: 0 0 5px #fdd6d6, 0 0 10px #ffdede, 0 0 20px #ffcfcf, 0 0 40px #f8d3d3;
+    }
+
+    25% {
+        text-shadow: 0 0 10px #ffeade, 0 0 20px #f7ddcf, 0 0 30px #f6daca, 0 0 50px #f6e0d4;
+    }
+
+    50% {
+        text-shadow: 0 0 5px #e6f7e7, 0 0 15px #eefaef, 0 0 30px #e4fde5, 0 0 40px #e4f6e5;
+    }
+
+    75% {
+        text-shadow: 0 0 15px #d5e9f5, 0 0 30px #d9e3ea, 0 0 50px #c5c9cb, 0 0 60px #d8ecf8;
+    }
+
+    100% {
+        text-shadow: 0 0 5px #f5e4e4, 0 0 10px #f1dcdc, 0 0 20px #f3dede, 0 0 40px #eec9c9;
+    }
+}
+
+
+
+/*text animation*/
+.word-break {
+
+    text-transform: uppercase;
+    line-height: 0.1;
+    text-align: center;
+    animation: breakWords 3s infinite ease-in-out;
+    white-space: nowrap;
+}
+
+@keyframes breakWords {
+
+    0%,
+    100% {
+        letter-spacing: 0.2rem;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    25% {
+        letter-spacing: 0.3rem;
+        transform: translateY(-20px);
+        opacity: 0.7;
+    }
+
+    50% {
+        letter-spacing: 0.4rem;
+        transform: translateY(10px);
+        opacity: 0.9;
+    }
+
+    75% {
+        letter-spacing: 0.5rem;
+        transform: translateY(-10px);
+        opacity: 0.8;
+    }
+}
