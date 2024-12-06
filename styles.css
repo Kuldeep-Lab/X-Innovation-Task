@@ -138,30 +138,3 @@ a:hover {
     }
 }
 
-
-.text-shadow {
-
-    animation: textShadowPulse 3s infinite ease-in-out;
-}
-
-@keyframes textShadowPulse {
-    0% {
-        text-shadow: 0 0 5px #fdd6d6, 0 0 10px #ffdede, 0 0 20px #ffcfcf, 0 0 40px #f8d3d3;
-    }
-
-    25% {
-        text-shadow: 0 0 10px #ffeade, 0 0 20px #f7ddcf, 0 0 30px #f6daca, 0 0 50px #f6e0d4;
-    }
-
-    50% {
-        text-shadow: 0 0 5px #e6f7e7, 0 0 15px #eefaef, 0 0 30px #e4fde5, 0 0 40px #e4f6e5;
-    }
-
-    75% {
-        text-shadow: 0 0 15px #d5e9f5, 0 0 30px #d9e3ea, 0 0 50px #c5c9cb, 0 0 60px #d8ecf8;
-    }
-
-    100% {
-        text-shadow: 0 0 5px #f5e4e4, 0 0 10px #f1dcdc, 0 0 20px #f3dede, 0 0 40px #eec9c9;
-    }
-}
